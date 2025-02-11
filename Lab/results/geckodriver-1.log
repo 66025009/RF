@@ -1,0 +1,14 @@
+1739245470000	geckodriver	INFO	Listening on 127.0.0.1:55041
+1739245473146	mozrunner::runner	INFO	Running command: "C:\\Users\\supap\\.cache\\selenium\\firefox\\win64\\135.0\\firefox.exe" "--marionette" "--remote-debugging- ... 2" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\supap\\AppData\\Local\\Temp\\rust_mozprofileEYjeIy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1739245473767	Marionette	INFO	Marionette enabled
+1739245473959	Marionette	INFO	Listening on port 55052
+WebDriver BiDi listening on ws://127.0.0.1:55042
+Read port: 55052
+1739245474165	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55042/devtools/browser/0c228ffe-778f-4fb3-bbc5-889f3ebe445f
+JavaScript warning: https://automationexercise.com/static/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1739245518129	Marionette	INFO	Stopped listening on port 55052
+Dynamically enable window occlusion 1

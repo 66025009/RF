@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.5 on win32)" generated="2025-02-11T10:59:12.254258" rpa="false" schemaversion="5">
+<suite id="s1" name="Lab" source="F:\Lab">
+<suite id="s1-s1" name="Testcase" source="F:\Lab\testcase">
+<suite id="s1-s1-s1" name="RF26" source="F:\Lab\testcase\RF26.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-02-11T10:59:12.715775" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com/'.</msg>
+<arg>https://automationexercise.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T10:59:12.715775" elapsed="5.283423"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Test Scroll Page" line="10">
+<kw name="Verify Home Page Is Visible">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Home</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-11T10:59:18.004307" elapsed="0.015173"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:59:18.037812" level="INFO">Current page contains element '//a[contains(text(),'Home')]'.</msg>
+<arg>//a[contains(text(),'Home')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-02-11T10:59:18.019480" elapsed="0.018332"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:59:18.002736" elapsed="0.036876"/>
+</kw>
+<kw name="Scroll Down To Bottom">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:59:18.041238" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-11T10:59:18.039612" elapsed="0.012821"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:59:18.039612" elapsed="0.012821"/>
+</kw>
+<kw name="Verify Subscription Section Is Visible">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:59:18.056584" level="INFO">Typing text 'test@com' into text field '//*[@id="susbscribe_email"]'.</msg>
+<arg>//*[@id="susbscribe_email"]</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T10:59:18.054162" elapsed="0.143649"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:59:18.210062" level="INFO">Current page contains element '//*[@id="susbscribe_email"]'.</msg>
+<arg>//*[@id="susbscribe_email"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-02-11T10:59:18.199439" elapsed="0.010623"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:59:18.054162" elapsed="0.155900"/>
+</kw>
+<kw name="Scroll Up To Top">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:59:18.213186" level="INFO">Executing JavaScript:
+window.scrollTo(0, 0)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 0)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-11T10:59:18.211632" elapsed="0.016453"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:59:18.211632" elapsed="0.016453"/>
+</kw>
+<kw name="Verify Page Scrolled Up">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Full-Fledged practice website for Automation Engineers</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-11T10:59:18.229801" elapsed="0.018645"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:59:18.229801" elapsed="0.018645"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:59:17.999198" elapsed="0.249248"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-11T10:59:18.253530" elapsed="2.198621"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:59:12.291835" elapsed="8.160316"/>
+</suite>
+<status status="PASS" start="2025-02-11T10:59:12.287967" elapsed="8.168663"/>
+</suite>
+<status status="PASS" start="2025-02-11T10:59:12.260978" elapsed="8.197935"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Lab" id="s1" pass="1" fail="0" skip="0">Lab</stat>
+<stat name="Testcase" id="s1-s1" pass="1" fail="0" skip="0">Lab.Testcase</stat>
+<stat name="RF26" id="s1-s1-s1" pass="1" fail="0" skip="0">Lab.Testcase.RF26</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
